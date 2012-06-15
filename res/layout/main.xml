@@ -3,10 +3,88 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+    
+    <resources>
+    <string
+        android:name="logIn"
+        >Log-in to PieShare</string>
+    <string
+        android:name="password"
+        >Password</string>
+    <string
+        android:name="email"
+        >Email</string>
+    <string
+        android:name="or"
+        >or</string>
+    <string
+        android:name="connectWithFacebook"
+        >Connect With Facebook</string>
+    <string
+        android:name="rememberMe"
+        >Remember Me</string>
+    </resources>
 
-    <TextView
-        android:layout_width="fill_parent"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_gravity="center_vertical"
+        android:text="@string/connectWithFacebook" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="TYPE_TEXT_VARIATION_PASSWORD"
+		android:text="@string/or" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ems="10" 
+        android:inputType="TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    	<requestFocus />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="TYPE_TEXT_VARIATION_WEB_PASSWORD"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logIn" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rememberMe" />
 
 </LinearLayout>
